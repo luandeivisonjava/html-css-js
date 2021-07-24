@@ -1,0 +1,264 @@
+body{
+    background-image: url("../../_img/bg1.jpg");
+    background-position: center; /* Center the image */
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root{
+    --themeColorA: #3385dd;
+    --themeColorA_h: #40caf4;
+
+    --red: #eb5463;
+    --red_h: #d94452;
+    --red_l: #f76c82;
+}
+
+/**
+MENU
+ */
+a{
+    text-decoration: none;
+    color: #66d4f1;
+    padding: 6px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 1s;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.inner-width{
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 0 10%;
+}
+.logo img{
+    width: 150px;
+}
+/**
+SLIDER
+ */
+
+#slider{
+    display: flex;
+    flex-wrap: wrap;
+    list-style:none;
+    width:100%;
+    height:346px;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    position: absolute;
+
+
+}
+#slider img{
+    width: 100%;
+}
+
+#slider li{
+    position: relative;
+    z-index: 0;
+    display:none;
+}
+
+#slider li .sliderActive{
+    width: 100%;
+    z-index: 0;
+}
+.sliderActive img{
+    width: 100%;
+
+}
+/**
+QUEM SOMOS
+ */
+.sobre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.mtop{
+    margin-top: 350px;
+}
+.title{
+    margin: 10px 5px;
+    padding: 5px 10px;
+    font-size: 2.1em;
+    text-decoration: underline;
+    color: #3aadd9;
+    background-color: white;
+}
+.title2{
+    color: #feff60;
+    margin: 5px 0;
+    padding: 20px;
+    font-size: 2.1em;
+    text-decoration: underline;
+}
+.sobre p{
+    color: white;
+    font-size: 1.4em;
+}
+.flex .flex-1 img{
+    width: 300px;
+}
+
+/**
+PRODUTOS
+ */
+.combo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.combo img{
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+/**
+FORMULARIO
+ */
+
+.forms_title{
+    text-align: center;
+}
+.form_item{
+
+
+}
+.fml_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
+.fml_form input, textarea{
+    margin: 10px;
+    padding: 20px;
+}
+.fml_form label{
+    color: #4fc0e8;
+    font-weight: bold;
+    margin: 10px;
+}
+.fml_form .btn{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: var(--themeColorA);
+}
+.fml_form .btn:hover{
+    background: var(--themeColorA_h);
+}
+
+/**
+FOOTER
+ */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    background-color: black;
+    color: white;
+    justify-content: center;
+
+}
+
+/**
+RESPONSIVO
+ */
+/* 1024px */
+@media (max-width: 64em){
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .mtop{
+        margin-top: 348px;
+    }
+
+}
+/* 768px */
+@media (max-width: 48em){
+    .mtop{
+        margin-top: 250px;
+    }
+    .main_footer_rights{
+        font-size: .6em;
+    }
+}
+/* 640px */
+@media (max-width: 40em){
+    .main_footer_rights{
+        font-size: .4em;
+    }
+}
+/* 580px */
+@media (max-width: 36em){
+
+}
+/* 480px */
+@media (max-width: 30em){
+    .inner-width img{
+        width: 100px;
+    }
+    .navigation-menu{
+        font-size: .7em;
+        width: 250px;
+    }
+    .mtop{
+        margin-top: 348px;
+    }
+    .main_footer_rights{
+        font-size: .5em;
+    }
+}
+@media (max-width: 425px) {
+    .mtop{
+        margin-top: 100px;
+    }
+    .navigation-menu{
+        width: 200px;
+        font-size: .5em;
+    }
+    .inner-width img{
+        width: 70px;
+    }
+    .main_footer_rights{
+        font-size: .4em;
+    }
+}
